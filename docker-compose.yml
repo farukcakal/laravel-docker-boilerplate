@@ -5,7 +5,7 @@ services:
       container_name: nginx
       image: nginx:alpine
       ports:
-        - "8080:80"
+        - "1903:80"
       depends_on:
         - app
         - db
