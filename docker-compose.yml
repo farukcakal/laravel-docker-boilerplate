@@ -25,12 +25,12 @@ services:
         - MYSQL_ROOT_PASSWORD=AlanyaAsd123+
 
     app:
-      container_name: laravel-boilerplate
+      container_name: app
       build:
         context: ./php
         dockerfile: Dockerfile
       volumes:
         - ./src:/var/www
       ports:
-        - "9001:9001"
+        - "9002:9002"
       working_dir: /var/www
